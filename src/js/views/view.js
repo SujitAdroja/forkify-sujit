@@ -1,5 +1,4 @@
 import icons from 'url:../../img/icons.svg';
-import { Fraction } from 'fractional';
 
 export class View {
   _data;
@@ -79,6 +78,6 @@ export class View {
     </div>  
     `;
     this._clear();
-    this._parentEl.insertAdjacentHTML('afterbegin', markup);
+    // this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 }
