@@ -66,7 +66,7 @@ export class View {
     this._clear();
     this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
-  renderMessage(message) {
+  renderMessage(message = this._message) {
     const markup = `
     <div class="message">
       <div>
@@ -78,6 +78,6 @@ export class View {
     </div>  
     `;
     this._clear();
-    // this._parentEl.insertAdjacentHTML('afterbegin', markup);
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 }

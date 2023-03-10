@@ -1,8 +1,8 @@
 import { View } from './view';
 
 import icons from 'url:../../img/icons.svg';
-import { Fraction } from 'fractional';
-
+// import { Fraction } from 'fractional';
+var Fraction = require('fractional').Fraction;
 class RecipeView extends View {
   _parentEl = document.querySelector('.recipe');
   _errorMessage = `We could not find that recipe. Please try another one !`;
